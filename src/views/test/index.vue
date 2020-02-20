@@ -36,8 +36,11 @@
     right: 0;
     top: 200px;
     font-family: digital-7, sans-serif;
-    font-size: 10vw;
+    font-size: 13vw;
     color: red;
+    background: #ffffff17;
+    padding: 10px 20px;
+    border: 1px solid #ff000038;
 
     .days, .hours, .minutes, .seconds {
       text-align: center;
