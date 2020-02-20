@@ -1,0 +1,57 @@
+<template>
+  <div>
+    <canvas id="birthday"></canvas>
+    <div class="timer d-flex justify-content-between w-50 mx-auto">
+      <div class="days">
+        <div>{{days}}</div>
+        <div class="heading">days</div>
+      </div>
+      <div class="hours">
+        <div>{{timer.hours}}</div>
+        <div class="heading">hours</div>
+      </div>
+      <div class="minutes">
+        <div>{{timer.minutes}}</div>
+        <div class="heading">minutes</div>
+      </div>
+      <div class="seconds">
+        <div>{{timer.seconds}}</div>
+        <div class="heading">seconds</div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script src="./test.js"></script>
+<style scoped lang="scss">
+  @font-face {
+    font-family: 'digital-7';
+    src: url('../../assets/fonts/digital-7.ttf');
+  }
+
+  .timer {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 200px;
+    font-family: digital-7, sans-serif;
+    font-size: 10vw;
+    color: red;
+
+    .days, .hours, .minutes, .seconds {
+      text-align: center;
+
+      div {
+        line-height: 0.9;
+      }
+
+      .heading {
+        content: 'HOURS';
+        font-size: 25px;
+        font-family: monospace;
+        text-transform: uppercase;
+      }
+    }
+  }
+</style>
