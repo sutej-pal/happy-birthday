@@ -105,9 +105,13 @@
 <style scoped lang="scss">
   .carousel-main {
     color: red;
-    background: #2c3e50;
     margin: 0 auto;
     padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
 
     .VueCarousel {
       width: 70%;

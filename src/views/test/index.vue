@@ -1,7 +1,7 @@
 <template>
   <div>
     <canvas id="birthday"></canvas>
-    <div class="timer d-flex justify-content-between w-50 mx-auto">
+    <div v-if="stopTimer" class="timer d-flex justify-content-between w-50 mx-auto">
       <div class="days">
         <div>{{days}}</div>
         <div class="heading">days</div>
