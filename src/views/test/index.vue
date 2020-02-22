@@ -1,7 +1,7 @@
 <template>
   <div>
     <canvas id="birthday"></canvas>
-    <div v-if="stopTimer" class="timer d-flex justify-content-between w-50 mx-auto">
+    <div v-if="!stopTimer" class="timer d-flex justify-content-between w-50 mx-auto">
       <div class="days">
         <div>{{days}}</div>
         <div class="heading">days</div>
@@ -28,6 +28,10 @@
   @font-face {
     font-family: 'digital-7';
     src: url('../../assets/fonts/digital-7.ttf');
+  }
+  @font-face {
+    font-family: 'Mochary';
+    src: url('../../assets/fonts/Mochary.ttf');
   }
 
   .timer {

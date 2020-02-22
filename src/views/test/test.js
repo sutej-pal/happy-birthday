@@ -20,10 +20,10 @@ export default {
   methods: {
     startTimer () {
       const startTime = moment().format('YYYY-MM-DD HH:mm:ss')
-      const endTime = moment('2020-02-22T17:12:40+05:30')
+      const endTime = moment('2020-02-22T23:59:59+05:30')
       const diff = endTime.diff(startTime)
       console.log('diff', diff)
-      if (diff === 0) {
+      if (diff < 0) {
         this.stopTimer = true
         Router.push({ path: '/test/test1' })
       }

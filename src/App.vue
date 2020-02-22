@@ -9,6 +9,9 @@
   </div>
 </template>
 <style lang="scss">
+  button:focus{
+    outline: none !important;
+  }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -1,7 +1,18 @@
 <template>
   <div class="carousel-main">
-    <carousel :per-page="1" :mouse-drag="true" :autoplay="true" :autoplayTimeout="2500" :loop="true"
-              :navigationEnabled="true" :pagination-enabled="false">
+    <carousel :per-page="1" :mouse-drag="true" :autoplay="false" :autoplayTimeout="2500" :loop="true"
+              :navigationEnabled="true" :pagination-enabled="false"
+              navigationPrevLabel="<span style='color: red;background: #ffffff2e;padding: 5px 10px;'>Prev</span>"
+              navigationNextLabel="<span style='color: red;background: #ffffff2e;padding: 5px 10px;'>Next</span>">
+      <slide>
+        <div class="w-100 h-100" style="background: rgba(255,255,255,0.55)">
+          <div style="font-family: Mochary, sans-serif;line-height: 1.2;font-size: 8vw;color: #000;">Happy Birthday</div>
+<!--          <div style="font-family: Mochary, sans-serif;line-height: 1.2;font-size: 6vw;color: #000;">To you</div>-->
+          <div style="font-family: Mochary, sans-serif;line-height: 1.2;font-size: 9vw;color: darkred">Shubham</div>
+          <div style="font-family: Mochary, sans-serif;line-height: 1.2;font-size: 3vw;color: darkred">(DeadPool)</div>
+          <div style="line-height: 1.2;font-size: 1vw;padding-top: 20px;color: #000;">Please click on Next to start ---->></div>
+        </div>
+      </slide>
       <slide>
         <img src="../../assets/images/shubham (1).jpg" alt="">
       </slide>
@@ -106,7 +117,7 @@
   .carousel-main {
     color: red;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 10px;
     position: absolute;
     top: 0;
     left: 0;
@@ -135,5 +146,9 @@
 
   .VueCarousel-navigation-button[data-v-453ad8cd]:focus {
     outline: 1px solid #e68200;
+  }
+  .VueCarousel-navigation-button[data-v-453ad8cd]{
+    color: red;
+    background: #ffffff26;
   }
 </style>
