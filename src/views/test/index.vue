@@ -19,6 +19,7 @@
         <div class="heading">seconds</div>
       </div>
     </div>
+    <router-view/>
   </div>
 </template>
 
@@ -36,7 +37,7 @@
     right: 0;
     top: 200px;
     font-family: digital-7, sans-serif;
-    font-size: 13vw;
+    font-size: 10vw;
     color: red;
     background: #ffffff17;
     padding: 10px 20px;

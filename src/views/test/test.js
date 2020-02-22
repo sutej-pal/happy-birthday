@@ -18,14 +18,14 @@ export default {
   methods: {
     startTimer () {
       const startTime = moment().format('YYYY-MM-DD HH:mm:ss')
-      const endTime = moment('2020-02-23T23:59:59+05:30')
+      const endTime = moment('2020-02-22T23:59:59+05:30')
       const diff = endTime.diff(startTime)
 
       // calculate total duration
       this.timer.hours = moment.utc(diff).format('HH')
       this.timer.minutes = moment.utc(diff).format('mm')
       this.timer.seconds = moment.utc(diff).format('ss')
-      this.days = endTime.diff(startTime, 'days')
+      this.days = '0' + endTime.diff(startTime, 'days')
       console.log(moment(this.duration).format('HH:mm:ss'))
       // this.timer = moment().format('h:mm:ss')
     }
