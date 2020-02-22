@@ -9,8 +9,5 @@ export default {
     getImageUrl (x) {
       return `../../assets/images/${x}.jpg`
     }
-  },
-  mounted () {
-    console.log('hi')
   }
 }
